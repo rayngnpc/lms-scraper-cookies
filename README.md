@@ -105,10 +105,10 @@ Learning Management Systems (LMS) at institutions like University often contain 
       Right-click anywhere on the login page and select "Inspect" or "Inspect Element". This will open        the browser's developer tools panel.
       c. Go to the "Network" Tab:
       In the developer tools panel, find and click on the "Network" tab.
-      ![alt text](https://i.stack.imgur.com/7xG00.png)
+      
       (Consider adding a generic screenshot link or embedding one if your Markdown renderer supports it)
       d. Ensure "Preserve log" (or similar) is checked (Optional but helpful): This ensures network           requests aren't cleared upon page navigation during login.
-      ![alt text](https://i.stack.imgur.com/u5P0f.png)
+      
       e. Manually Log In to the LMS:
       On the LMS login page, enter your username and password and click the login button.
       f. Identify a Key Network Request After Login:
