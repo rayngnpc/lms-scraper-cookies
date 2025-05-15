@@ -102,7 +102,7 @@ To allow the script to interact with the LMS as an authenticated user, you'll ne
 
 *   Step 1: Navigate and Open Developer Tools
 Open your web browser (e.g., Chrome, Firefox).
-Go to the Mercy University LMS login page (e.g., https://mercyuni-lms.example.com).
+Go to the University LMS login page (e.g., https://uni-lms.example.com).
 Right-click anywhere on the login page and select "Inspect" or "Inspect Element" to open the browser's developer tools.
 
 *   Step 2: Prepare the Network Tab
@@ -135,7 +135,7 @@ In the root directory of your cloned project (e.g., LMS-Auditor/), access text f
 Paste the entire copied cookie string into this raw_cookies.txt file.
 Use code with caution.
 
-Txt
+
 ❗ Step 7: Secure Your Cookies File (VERY IMPORTANT)
 The raw_cookies.txt file contains sensitive session information. To prevent accidentally committing it to Git:
 Open the .gitignore file in your project's root directory.
