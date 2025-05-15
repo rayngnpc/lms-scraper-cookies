@@ -19,7 +19,7 @@ Learning Management Systems (LMS) at institutions like University often contain 
 
 **Core Functionality:**
 
-*   **Secure LMS Login:** Authenticates with the Mercy University LMS to access course content.
+*   **Secure LMS Login:** Authenticates with the University LMS to access course content.
 *   **Comprehensive Content Discovery:**
     *   Scrapes specified LMS courses to identify all embedded and linked materials (e.g., PDFs, Word documents, PowerPoints, web links, embedded videos).
     *   Parses discovered materials (documents, HTML pages) to extract all external/third-party URL references.
@@ -39,7 +39,7 @@ Learning Management Systems (LMS) at institutions like University often contain 
     *   Optionally copies publicly accessible external content (e.g., articles, images) to a controlled local repository.
     *   Modifies the LMS content to point to this locally stored version.
 *   **Academic Referencing:**
-    *   For localized content, automatically generates academic references (e.g., APA 7th edition, or the Mercy University standard) including available metadata like date/time accessed, author (if extractable).
+    *   For localized content, automatically generates academic references (e.g., APA 7th edition, or the University standard) including available metadata like date/time accessed, author (if extractable).
     *   Embeds these references alongside the localized content in the LMS.
 *   **Original Link Preservation & Warnings:**
     *   Maintains a clearly marked link to the original external material for verification and authentication by the end-user.
@@ -58,12 +58,12 @@ Learning Management Systems (LMS) at institutions like University often contain 
 ## ❗ Ethical Use, ToS & Data Handling
 
 **VERY IMPORTANT:**
-*   **Mercy University ToS & Policy:** This tool directly interacts with the University's LMS. Ensure its development and use are aligned with Mercy University's IT policies and the LMS Terms of Service. **Obtain necessary approvals if required.**
-*   **Copyright & Fair Use (for Extension Activity):** When copying external content, be acutely aware of copyright laws and fair use principles. This feature should primarily target publicly accessible, open content or content where Mercy University has appropriate licenses.
+*   ** University ToS & Policy:** This tool directly interacts with the University's LMS. Ensure its development and use are aligned with  University's IT policies and the LMS Terms of Service. **Obtain necessary approvals if required.**
+*   **Copyright & Fair Use (for Extension Activity):** When copying external content, be acutely aware of copyright laws and fair use principles. This feature should primarily target publicly accessible, open content or content where  University has appropriate licenses.
 *   **Third-Party ToS:** Scraping third-party websites also has implications. Be respectful and check their `robots.txt` and ToS.
 *   **Data Privacy:** Handle LMS credentials and any scraped student data (if inadvertently encountered) with utmost confidentiality and in compliance with privacy regulations (e.g., FERPA).
 *   **Reputation Service API Limits:** Be mindful of API rate limits for the chosen cyber reputation service.
-*   **This script is intended for official use by authorized Mercy University personnel.** The developers are not responsible for any misuse or policy violations.
+*   **This script is intended for official use by authorized  University personnel.** The developers are not responsible for any misuse or policy violations.
 
 ---
 
@@ -71,7 +71,7 @@ Learning Management Systems (LMS) at institutions like University often contain 
 
 *   Python 3.8+
 *   `pip` (Python package installer)
-*   Access credentials for the Mercy University LMS (with appropriate permissions).
+*   Access credentials for the  University LMS (with appropriate permissions).
 *   API Key for the chosen Cyber Reputation Service (e.g., VirusTotal API Key).
 *   (For extension activity) A designated local repository/server space for storing cached content.
 
@@ -81,8 +81,8 @@ Learning Management Systems (LMS) at institutions like University often contain 
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/YourUsername/MercyU-LMS-Auditor.git
-    cd MercyU-LMS-Auditor
+    git clone https://github.com/YourUsername/U-LMS-Auditor.git
+    cd U-LMS-Auditor
     ```
 
 2.  **Create and Activate a Virtual Environment:**
@@ -103,7 +103,7 @@ Learning Management Systems (LMS) at institutions like University often contain 
     *   Open `config.yaml` and configure:
     ```yaml
     lms:
-      base_url: "https://mercyuni-lms.example.com" # Mercy University's LMS URL
+      base_url: "https://uni-lms.example.com" #  University's LMS URL
       username: "LMS_SERVICE_ACCOUNT_USERNAME" # Use a dedicated service account if possible
       password: "LMS_SERVICE_ACCOUNT_PASSWORD" # Consider environment variables
 
@@ -124,14 +124,14 @@ Learning Management Systems (LMS) at institutions like University often contain 
     localization:
       enabled: false # Set to true to enable content localization
       local_repository_path: "/mnt/lms_cached_content/" # Path to store copied content
-      academic_referencing_style: "APA7" # Or Mercy Uni's standard
+      academic_referencing_style: "APA7" # Or  Uni's standard
       warn_on_paywall: true
 
     reporting:
       report_format: "csv" # or "html", "pdf"
       email_reports_to_owners: false # If true, need SMTP settings
     # smtp_settings:
-    #   server: "smtp.mercy.edu"
+    #   server: "smtp..edu"
     #   port: 587
     #   username: "..."
     #   password: "..."
@@ -199,10 +199,10 @@ Command-line Interface: argparse (standard library) or click (more user-friendly
 (The "Contributing", "License", and "Contact" sections can remain similar to the previous template, but ensure the Project Link and any contact info are correct for this specific project.)
 **Key Changes and Considerations from your new requirements:**
 
-1.  **Project Name & Purpose:** Clearly identifies it as an "Auditor & Localizer" for Mercy University.
+1.  **Project Name & Purpose:** Clearly identifies it as an "Auditor & Localizer" for  University.
 2.  **Core Problem Statement:** Added this to give context.
 3.  **Features Section Restructured:** Separated into "Core Functionality" and "Extension Activity Features" to match your problem description. Each point is now much more specific.
-4.  **Ethical Use Section Enhanced:** Added specific warnings about Mercy University ToS, Copyright, and FERPA, which are critical for a tool like this in an educational institution.
+4.  **Ethical Use Section Enhanced:** Added specific warnings about  University ToS, Copyright, and FERPA, which are critical for a tool like this in an educational institution.
 5.  **Prerequisites:** Added "API Key for Cyber Reputation Service" and "local repository space."
 6.  **Installation (`requirements.txt` note):** Highlighted the need for document parsing libraries.
 7.  **Configuration (`config.yaml`):** Significantly expanded to include settings for:
@@ -214,4 +214,4 @@ Command-line Interface: argparse (standard library) or click (more user-friendly
 9.  **Output & Reports:** Detailed the expected report content and structure, including fields like `Localized_Content_Path` and `Academic_Reference`.
 10. **Key Libraries to Use:** Added a section suggesting specific libraries for document parsing, API clients, and academic referencing, as these are crucial for the new features.
 
-This revised README should provide a very clear and comprehensive overview of your project, its specific goals for Mercy University, and how to set it up and use it. Remember to continuously update it as your project evolves!
+This revised README should provide a very clear and comprehensive overview of your project, its specific goals for  University, and how to set it up and use it. Remember to continuously update it as your project evolves!
