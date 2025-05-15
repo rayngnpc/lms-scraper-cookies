@@ -111,10 +111,12 @@ Learning Management Systems (LMS) at institutions like University often contain 
       
       e. Manually Log In to the LMS:
       On the LMS login page, enter your username and password and click the login button.
+    ```
       f. Identify a Key Network Request After Login:
       Once you are successfully logged in and redirected to the LMS dashboard or a course page, look at       the list of requests in the "Network" tab. You need to find a request made after successful login.
       This could be a request to a .json endpoint (e.g., ajax.json, dashboard_data.json), an XHR             request, or even the main HTML document request for the page you landed on.
       Click on this request in the list to see its details.
+    
       g. Navigate to the "Cookies" or "Headers" Tab for the Request:
       In the details pane for the selected request:
       Some browsers have a dedicated "Cookies" sub-tab.
