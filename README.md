@@ -97,20 +97,20 @@ Learning Management Systems (LMS) at institutions like University often contain 
     pip install -r requirements.txt
     ```
     *(You will need to add libraries for document parsing like `python-docx`, `pypdf2` or `pdfminer.six`, `openpyxl`, etc. to your `requirements.txt` depending on the file types you need to analyze).*
-4. 🍪 LMS Session Cookie Acquisition (Manual Step)
+4.  🍪 LMS Session Cookie Acquisition (Manual Step)
 To allow the script to interact with the LMS as an authenticated user, you'll need to manually obtain active session cookies. Follow these steps carefully using your web browser's developer tools:
-Step 1: Navigate and Open Developer Tools
+*   Step 1: Navigate and Open Developer Tools
 Open your web browser (e.g., Chrome, Firefox).
 Go to the Mercy University LMS login page (e.g., https://mercyuni-lms.example.com).
 Right-click anywhere on the login page and select "Inspect" or "Inspect Element" to open the browser's developer tools.
-Step 2: Prepare the Network Tab
+*   Step 2: Prepare the Network Tab
 In the developer tools panel, click on the "Network" tab.
 (Optional but Recommended) Look for an option like "Preserve log" or "Persist Logs" and ensure it is checked. This prevents requests from being cleared when you navigate during login.
 Example (Chrome):
 ![alt text](https://i.stack.imgur.com/u5P0f.png)
 Example (Firefox):
 ![alt text](https://i.stack.imgur.com/tC5kG.png)
-Step 3: Log In to the LMS
+*   Step 3: Log In to the LMS
 Back on the LMS login page (not in the developer tools), enter your LMS username and password.
 Click the login button to sign in.
 Step 4: Find a Relevant Network Request
