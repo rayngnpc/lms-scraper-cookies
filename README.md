@@ -1,4 +1,4 @@
-# 🎓 [Your Project Name] - LMS Scraper
+# 🎓 LMS Scraper - Under Developing
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <!-- Optional: Add a license badge -->
 <!-- Add other badges if you like: build status, version, etc. -->
