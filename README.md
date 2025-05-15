@@ -1,4 +1,4 @@
-# 🎓 LMS External Content Auditor & Localizer (for Mercy University)
+# 🎓 LMS External Content Auditor & Localizer (for University) - Still Under Developing
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
