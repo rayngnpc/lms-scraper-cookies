@@ -1,15 +1,1 @@
-_ga	"GA1.4.1403710615.1747317242"
-_ga_PM3WF67VZB	"GS2.4.s1747317243$o1$g0$t1747317243$j0$l0$h0"
-_gat	"1"
-_gcl_au	"1.1.173331280.1747317170"
-_gid	"GA1.4.2077056859.1747317242"
-_pk_id.4.e4ea	"88eaa3bd5e1b6c72.1747317244."
-_pk_ref.4.e4ea	'["","",1747317244,"https://login.microsoftonline.com/"]'
-_pk_ses.4.e4ea	"1"
-_scid	"k91QmoRYnVeckqBZ4B1mIrLiHBhlzgJt"
-_scid_r	"k91QmoRYnVeckqBZ4B1mIrLiHBhlzgJt"
-_sctr	"1|1747238400000"
-intelliboardPage	"site"
-intelliboardParam	"1"
-intelliboardTime	"30"
-MoodleSession	"4ave2vao22m8hrl9rqif6iko9r"
+
